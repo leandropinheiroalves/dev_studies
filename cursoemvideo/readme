@@ -1,0 +1,124 @@
+[Tipos Primitivos]
+    int # numeros inteiros, ex: 7, -4, 0, 9875
+    float # numeros reais ex: 4.5, 0.076, -15.223, 7.0
+    bool # verdadeiro ou falso ex: True, False
+    str # 'Olá', '7.5', '8', ''
+
+[F String]
+    print('A soma vale', s) # imprime a string e depois o valor da variavel s
+    print(f'A soma vale {s}') # imprime a string com o valor da variavel s
+    print('A soma vale {}'.format(s)) # imprime a string com o valor da variavel s
+    print(f'A soma vale {s:20}') # imprime a string com o valor da variavel s em 20 caracteres
+    print(f'A soma vale {s:>20}') # imprime a string com o valor da variavel s em 20 caracteres alinhado a direita
+    print(f'A soma vale {s:<20}') # imprime a string com o valor da variavel s em 20 caracteres alinhado a esquerda
+    print(f'A soma vale {s:^20}') # imprime a string com o valor da variavel s em 20 caracteres centralizado
+    print(f'A soma vale {s:=^20}') # imprime a string com o valor da variavel s em 20 caracteres centralizado com = em volta
+
+[Operadores Aritméticos]
+    +   # Adição            ex: 5+2==7
+    -   # Subtração         ex: 5-2==3
+    *   # Multiplicação     ex: 5*2==10
+    /   # Divisão           ex: 5/2==2.5
+    **  # Exponenciação     ex: 5**2==25
+    //  # Divisão Exata     ex: 5//2==2
+    %   # Resto da Divisão  ex: 5%2==1
+
+[Ordem de Precedência]
+    ()              # 1°
+    **              # 2°
+    *, /, //, %     # 3°
+    +, -            # 4°
+    Ex:
+    5+3*2 == 5+6 == 11
+    3*5+4**2 == 3*5+16 == 15+16 == 31
+    3*(5+4)**2 == 3*9**2 == 3*81 == 243
+
+[Importar Módulos]
+    - import math# importa o modulo math, fazendo com que eu possa utilizar a funcionalidades da biblioteca math no meu projeto
+        # ao importar toda a biblioteca é necessário utilizar o nome dela para utilizar as funções ex: math.floor(7.5)
+    - from math import floor # importa apenas a funçao floor do modulo math, permitindo utilizar apenas o comando floor e não os demais da biblioteca math
+        # importando apenas uma função especifica não é necessário usar o nome da biblioteca ex: floor(7.5)
+
+[Biblioteca math]
+    - ceil # arredondamento pra cima
+    - floor # arredondamento pra baixo
+    - trunc # truncagem
+    - pow # exponenciação
+    - sqrt # raiz quadrada
+    - factorial # fatorial
+    - hypot # hipotenusa
+
+[Manipulando Cadeia de Caracteres]
+    - Fatiamento
+        frase = 'Curso em Vídeo Python'
+        frase[9] == 'V'
+        frase[9:13] == 'Víde' # pega os caracteres da posição 9 até a posição 12, porque o intervalo é aberto no inicio e fechado no final
+        frase[9:21:2] == 'VdoPto' # pega os caracteres da posição 9 até a 20 pulando de 2 em 2.
+        frase[:5] == 'Curso' # sem o valor inicial a contagem começa do inicio até o 4necessário
+        frase[15:] == 'Python' # sem o valor final a contagem vai até o final
+        frase[9::3] == 'VePh' # sem o valor do meio, quer dizer que vai iniciar da posição 9 até o final pulando de 3 em 3.
+    - Análise
+        len(frase) == 21 # o len informa a quantidade de caracteres em uma string ou lista
+        frase.count('o') == 3 # .count conta quantas vezes o 'o' aparece dentro da string frase
+        frase.count('o', 0, 13) == 1 # igual a anterior porem já com fatiamento do inicio ate a posição 12
+        frase.find('deo') == 11 # busca dentro da string frase a sequencia 'deo' e retorna  o numero da posicao inicial encontrada
+        frase.find('Android') == -1 # quando a operação find não encontra nada ela retorna o valor -1
+        'Curso' in frase == True # verifica se 'Curso' está dentro da string frase
+    - Transformação
+        frase.replace('Python', 'Android') # metodo que procura dentro da string por 'Python' e caso encontrado substitui por 'Android'
+        frase.upper() # metodo que transforma todos os caracteres da string em maiusculas
+        frase.lower() # metodo que transforma todos os caracteres da string em minusculas
+        frase.capitalize() # metodo que tranforma todos os caracteres pra minusculo e a primeira pra maiusculo
+        frase.title() # faz o mesmo que capitalize, com a diferença que deixa todas as letras iniciais das palavras em maiusculas
+        frase.strip() # remove todos os espaços no inicio e no final da string
+        frase.rstrip() # remove só os espaços do final
+        frase.lstrip() # remove só os espaços do inicio
+    - Divisão
+        frase.split() # criar uma lista com os valores da string separados pelos espaços
+    - Junção
+        '-'.join(frase) # junta todos os valores de uma lista em uma string separando os valores pelo -
+
+[Condições Simples e Compostas]
+    - Condião Simples # só é utilizado o if
+        nome = str(input('Qual é seu nome? '))
+        if nome == 'Leandro':
+            print('Que nome lindo  você tem!')
+        print('Bom dia, {}'.format(nome))
+    - Condição composta # o else é utilizado
+        tempo = int(input('Quantos anos tem seu carro?'))
+        if tempo <= 3:          # caso o tempo for menor ou igual a 3, todo o código indentado dentro do if será executado
+            print('carro novo')
+        else:                   # caso o tempo for maior que 3, o código dentro do if será pulado e o código indentado dentro do else será executado
+            print('carro velho')
+        print('--FIM--')        # código fora da indentação será executado normalmente.
+    - Condição simplificada
+        tempo = int(input('Quantos anos tem seu carro?'))
+        print('carro novo' if tempo <= 3 else 'carro velho') # um jeito simplificado de fazer, no entanto não é o mais recomendável
+        print('--FIM--')
+
+[Cores no Terminal]
+    - ANSI escape sequence
+        print(\033[style;text;backmOlá Mundo)
+        - códigos para style
+            0 == None
+            1 == Bold # Negrito
+            2 == Underline # Sublinhado
+            3 == Negative # Negativo
+        - códigos para text # cores
+            30 == Branco
+            31 == Vermelho
+            32 == Verde
+            33 == Amarelo
+            34 == Azul
+            35 == Magenta
+            36 == Ciano
+            37 == Cinza
+        - códigos back # background
+            40 == Branco
+            41 == Vermelho
+            42 == Verde
+            43 == Amarelo
+            44 == Azul
+            45 == Magenta
+            46 == Ciano
+            47 == Cinza
