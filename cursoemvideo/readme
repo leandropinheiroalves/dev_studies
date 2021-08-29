@@ -124,5 +124,27 @@
             47 == Cinza
 
 [Condições Aninhadas] # 3 possibilidades ou mais
+    if condiçao1:
+        bloco1
+    elif condição2:
+        bloco2
+    elif condição3:
+        bloco3
+    else:
+        bloco4
 
-
+[Laços de Repetição]
+    - for # utilizado quando é sabido o número de repetições a serem feitas
+        for i in range(0, 3): #cria um laço de repetição que vai se repitir 3 vezes
+            bloco a ser repetido
+        bloco fora do compo do laço
+    - while # utilizando quando não é sabido o numero de repetições a serem feitas
+        ex1:
+        c = 1           # necessário criar a variavel de repetição fora do while
+        while c < 0:   # enquanto essa condição for verdadeira o loop continuará
+            print(c)
+            c += 1      # necessário incrementar a váriavel para não ter um loop infinito
+        ex2:
+        n = 1
+        while n != 0:
+            n = int(input('Digite um valor: ') # enquanto o valor 0 não for digitado, o loop ira continuar
