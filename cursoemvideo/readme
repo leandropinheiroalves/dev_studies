@@ -148,3 +148,8 @@
         n = 1
         while n != 0:
             n = int(input('Digite um valor: ') # enquanto o valor 0 não for digitado, o loop ira continuar
+        ex3:
+        while True:         #loop infinito
+            condiçao
+            if condicao:
+                break       #para o loop infinito e sai do while

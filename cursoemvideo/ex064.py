@@ -6,10 +6,8 @@ No final, mostre quantos números foram digitados e qual foi a soma entre eles (
 soma = contador = 0
 while True:
     numero = int(input('Digite um número [999 para parar]: '))
-    contador += 1
-    soma += numero
     if numero == 999:
-        soma -= 999
-        contador -= 1
         break
+    soma += numero
+    contador += 1
 print(f'Você digitou {contador} números e a soma deles é {soma}')
