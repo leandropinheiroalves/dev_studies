@@ -153,3 +153,9 @@
             condiçao
             if condicao:
                 break       #para o loop infinito e sai do while
+
+[Variáveis Compostas]
+    - Tuplas
+        As tuplas são imutáveis, seus valores não podem ser mudados durante a execução, apenas na hora da criação da tupla
+        A tupla pode ser apaga com o comando del
+
