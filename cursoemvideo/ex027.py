@@ -4,11 +4,10 @@ Ex: Ana Maria de Souza
 Primeiro = Ana
 Último = Souza
 """
-
-nome = str(input('Digite o nome completo: '))
-lista = nome.split()
-print(f'Primeiro nome é: {lista[0]}')
-print(f'Último nome é: {lista[-1]}')
+nome = str(input('Digite o nome completo: '))  # Recebendo um nome completo
+lista = nome.split()  # Transformando o nome completo em uma lista
+print(f'Primeiro nome é: {lista[0]}')  # Retornando o primeiro valor da lista
+print(f'Último nome é: {lista[-1]}')  # Retornando o último valor da lista
 
 # # Solução Guanabara:
 # n = str(input('Digite seu nome completo: ')).strip()
