@@ -86,14 +86,14 @@
         print('Bom dia, {}'.format(nome))
     - Condição composta # o else é utilizado
         tempo = int(input('Quantos anos tem seu carro?'))
-        if tempo <= 3:          # caso o tempo for menor ou igual a 3, todo o código indentado dentro do if será executado
+        if tempo <= 3:  # caso o tempo for menor ou igual a 3, todo o código indentado dentro do if será executado
             print('carro novo')
-        else:                   # caso o tempo for maior que 3, o código dentro do if será pulado e o código indentado dentro do else será executado
+        else:  # caso o tempo for maior que 3, o código dentro do if será pulado e o código indentado dentro do else será executado
             print('carro velho')
-        print('--FIM--')        # código fora da indentação será executado normalmente.
+        print('--FIM--')  # código fora da indentação será executado normalmente.
     - Condição simplificada
         tempo = int(input('Quantos anos tem seu carro?'))
-        print('carro novo' if tempo <= 3 else 'carro velho') # um jeito simplificado de fazer, no entanto não é o mais recomendável
+        print('carro novo' if tempo <= 3 else 'carro velho')  # um jeito simplificado de fazer, no entanto não é o mais recomendável
         print('--FIM--')
 
 [Cores no Terminal]
@@ -138,24 +138,57 @@
         for i in range(0, 3): #cria um laço de repetição que vai se repitir 3 vezes
             bloco a ser repetido
         bloco fora do compo do laço
-    - while # utilizando quando não é sabido o numero de repetições a serem feitas
+    - while  # utilizando quando não é sabido o numero de repetições a serem feitas
         ex1:
-        c = 1           # necessário criar a variavel de repetição fora do while
-        while c < 0:   # enquanto essa condição for verdadeira o loop continuará
+        c = 1  # necessário criar a variavel de repetição fora do while
+        while c < 0:  # enquanto essa condição for verdadeira o loop continuará
             print(c)
-            c += 1      # necessário incrementar a váriavel para não ter um loop infinito
+            c += 1  # necessário incrementar a váriavel para não ter um loop infinito
         ex2:
         n = 1
         while n != 0:
-            n = int(input('Digite um valor: ') # enquanto o valor 0 não for digitado, o loop ira continuar
+            n = int(input('Digite um valor: ')  # enquanto o valor 0 não for digitado, o loop ira continuar
         ex3:
-        while True:         #loop infinito
+        while True:  #loop infinito
             condiçao
             if condicao:
-                break       #para o loop infinito e sai do while
+                break  #para o loop infinito e sai do while
 
 [Variáveis Compostas]
-    - Tuplas
+    - Tuplas ()
         As tuplas são imutáveis, seus valores não podem ser mudados durante a execução, apenas na hora da criação da tupla
-        A tupla pode ser apaga com o comando del
+        A tupla pode ser apagada com o comando del
 
+    - Listas []
+        - criar listas
+        lista = []
+        lista = list()
+        Armazenam vários valores como as tuplas, mas podem ser mudados durante a execução
+        - adicionar elementos
+            lista.append('valor')  # adiciona um valor no final da lista
+            lista.insert(0, 'valor')  # adiciona um valor na posição 0 da lista
+        - apagar elementos
+            del lista[3]  # apaga o elemento na posição 3 da lista
+            lanche.pop(3)  # também apaga o elemento na posição 3 da lista
+            lanche.pop()  # metodo pop sem parametro por padrão elimina o último elemento da lista
+            lanche.remove('valor')  # remove da lista especificamente o valor informado
+        - alguns metodos de uma lista
+            valores = list(range(4, 11))  # cria uma lista com o nome valores com os valores 4, 5, 6, 7, 8, 9, 10
+            valores = [8, 2, 5, 4, 9, 3, 0]  # cria uma lista com os valores informados
+            valores.sort()  # organiza os valores da lista, com base no exemplo acima a lista ficaria [0, 2, 3, 4, 5, 8, 9]
+            valores.sort(reverse=True)  # organiza os valores da lista em ordem reversa se tornando [9, 8, 5, 4, 3, 2, 0]
+            len(valores)  # número de elementos em uma lista
+        - copiando uma lista
+            lista = [1, 2, 3]
+            lista_2 = lista  # será criada uma ligação entre as listas, ao alterar uma as duas serão alteradas
+            lista_2 = lista[:] # melhor opção, será criada uma lista 2 com os valores da primeira lista
+
+    - Listas Compostas [[]] # listas dentro de listas
+            lista_1 = [1, 2, 3]
+            lista_2.append(lista[:]) # serão adicionados todos  os valores da lista_1 ao primeiro valor da lista_2
+            ex:
+            pessoas = [['Pedro', 25], ['Maria', 19], ['João', 32]]
+            print(pessoas[0][0]) # retorna o item 0 do primeiro valor de pessoas, no caso 'Pedro'
+            print(pessoas[1][1]) # retorna o item 1 do segundo valor de pessoas, no caso 19
+            print(pessoas[2][0]) # retorna o item 0 do terceiro valor de pessoas, no caso 'João'
+            print(pessoas[1]) # retorna o 2 valor de pessoas, no caso ['Maria', 19]
