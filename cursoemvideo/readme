@@ -184,11 +184,52 @@
             lista_2 = lista[:] # melhor opção, será criada uma lista 2 com os valores da primeira lista
 
     - Listas Compostas [[]] # listas dentro de listas
-            lista_1 = [1, 2, 3]
-            lista_2.append(lista[:]) # serão adicionados todos  os valores da lista_1 ao primeiro valor da lista_2
+        lista_1 = [1, 2, 3]
+        lista_2.append(lista[:]) # serão adicionados todos  os valores da lista_1 ao primeiro valor da lista_2
+        ex:
+        pessoas = [['Pedro', 25], ['Maria', 19], ['João', 32]]
+        print(pessoas[0][0]) # retorna o item 0 do primeiro valor de pessoas, no caso 'Pedro'
+        print(pessoas[1][1]) # retorna o item 1 do segundo valor de pessoas, no caso 19
+        print(pessoas[2][0]) # retorna o item 0 do terceiro valor de pessoas, no caso 'João'
+        print(pessoas[1]) # retorna o 2 valor de pessoas, no caso ['Maria', 19]
+
+    - Dicionários {}
+        - criar dicionário
+            dados = dict()
+            dados = {'nome':'Pedro', 'idade':25}
+            print(dados['nome'])    Pedro
+            print(dados['idade'])   25
+        - adicionar elementos
+            dados['sexo'] = 'M'     {'nome':'Pedro', 'idade':25, 'sexo':'M'}
+        - remover elementos
+            del dados['idade']  # elimina o índice idade e o seu valor
+        - alguns exemplos:
+            filme = {'titulo':'Star Wars',
+                     'ano':1977,
+                     'diretor':'George Lucas'
+                    }
+            obs*: os dicionários são compostos por itens, chaves e valores:
+                - itens são a junção de chave e valor, no exemplo acima o primeiro item é ('título':'Star Wars')
+                - chaves são os índices, no exemplo acima a chave é título
+                - valores são o que as chaves armazenam, no exemplo acima o valor da chave título é Star Wars
+        -alguns métodos de um dicionário
+            print(filme.values())  # retorna apenas os valores, no caso do exemplo de filme seriam, Star Wars, 1997 e George Lucas
+            print(filme.keys())  # retorna apenas as chaves, no exemplo de filme seriam, título, ano e diretor
+            print(filme.items())  # retorna os itens, no exemplo do filme seriam titulo:Star Wars, ano:1977 e diretor:George Lucas
+            -ex:
+                for k, v in filme.items():
+                    print(f'O {k} é {v}')  # retorna a chave(k) e o valor(v), alterando conforme o loop
+                        # retorno do for:
+                        O título é Star Wars
+                        O ano é 1977
+                        O diretor é George Lucas
+            filme.copy()  # copia o contéudo do dicionário
+        * Dicionários, listas e tuplas podem se misturar, um dentro do outro
             ex:
-            pessoas = [['Pedro', 25], ['Maria', 19], ['João', 32]]
-            print(pessoas[0][0]) # retorna o item 0 do primeiro valor de pessoas, no caso 'Pedro'
-            print(pessoas[1][1]) # retorna o item 1 do segundo valor de pessoas, no caso 19
-            print(pessoas[2][0]) # retorna o item 0 do terceiro valor de pessoas, no caso 'João'
-            print(pessoas[1]) # retorna o 2 valor de pessoas, no caso ['Maria', 19]
+            locadora = [{}, {}, {}]  # locadora é uma lista que contém 3 dicionários dentro
+            locadora = [{'título':'Star Wars', 'ano':'1977', 'diretor':'George Lucas'},
+                        {'título':'Avengers', 'ano':'2012', 'diretor':'Joss Whedon'},
+                        {'título':'Matrix', 'ano':'1999', 'diretor':'Machowski'}
+                       ]
+            print(locadora[0]['ano']  # retorna o valor da chave ano do primeiro valor da lista locadora, nesse caso 1977
+            print(locadora[2]['título']  # retorna o valor da chave título do terceiro valor da lista locadora, nesse caso Matrix
