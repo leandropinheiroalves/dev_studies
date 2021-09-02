@@ -233,3 +233,45 @@
                        ]
             print(locadora[0]['ano']  # retorna o valor da chave ano do primeiro valor da lista locadora, nesse caso 1977
             print(locadora[2]['título']  # retorna o valor da chave título do terceiro valor da lista locadora, nesse caso Matrix
+[Funções]
+    - Definições
+        Funções são rotinas
+        ex: de funções que já vem no python: print(), len(), input(), int(), float()
+    - Criando funções
+        ex:
+        print('----------------------------------')
+        print('SISTEMA ALUNOS')
+        print('----------------------------------')
+        print('----------------------------------')
+        print('CADASTRO DE FUNCIONÁRIO')
+        print('----------------------------------')
+        print('----------------------------------')
+        print('ERRO DO SISTEMA')
+        print('----------------------------------')
+        # esse código podo ser substítuido por uma função
+            def mensagem(msg):  # criando a função
+                print('----------------------------------')
+                print(msg)
+                print('----------------------------------')
+
+        mensagem('SITEMA DE ALUNOS')  # executando a função
+        mensagem('CADASTRO DE FUNCIONÁRIO')
+        mensagem('ERRO DO SISTEMA')
+    - Empacotar parâmetros
+        ex1:
+            def contador(*núm):  # ao usar o * o python entende que vão ser inseridos vários valores
+                tam = len(núm)
+                print(f'Recebi os valores {núm} e são ao no total {tám} números)
+            contador(2, 1, 7)  # Retorna: Recebi os valores (2, 1, 7) e são ao todos 3 números
+            contador(8, 0)  # Retorna: Recebi os valores (8, 0) e são ao todos 2 números
+            contador(4, 4, 7, 6, 2)  # Retorna: Recebi os valores (4, 4, 7, 6, 2) e são ao todos 5 números
+        ex2:  # dobrar os valores de cada número em uma lista
+            def dobra(lst):
+                pos = 0
+                while pos < len(lst):
+                    lst[pos]*=2
+                    pos+=1
+            valores = [7, 2, 5, 0, 4]
+            dobra(valores)
+            print(valores) # Retorna: [14, 4, 10, 0, 8]
+
