@@ -6,7 +6,7 @@ que receba as dimensões de um terreno retangular(largura e comprimento) e mostr
 
 def area(largura, comprimento):  # Criando função area com parâmetros largura e comprimento
     a = largura * comprimento  # Variável que calcula a área
-    print(f'A área de um terreno {largura} x {comprimento} é de {a} m².')  # Retorna a área
+    print(f'A área de um terreno {largura} x {comprimento} é de {a} m².')  # Imprime na tela a área
 
 
 # Programa Principal

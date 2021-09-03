@@ -11,10 +11,10 @@ Olá, Mundo!
 
 
 def escreva(mensagem):  # Criando função escreva com parâmetro mensagem
-    tamanho = len(mensagem) + 4  # Váriavel com tamanho da mensagem + 4
-    print('=' * tamanho)  # Retorna sinais de igual conforme o valor da variável tamanho
-    print(f'  {mensagem}')  # Retorna a mensagem
-    print('=' * tamanho)  # Retorna sinais de igual conforme o valor da variável tamanho
+    tamanho = len(mensagem) + 4  # Váriavel com o tamanho da mensagem + 4
+    print('=' * tamanho)  # Imprime na tela sinais de igual conforme o valor da variável tamanho
+    print(f'  {mensagem}')  # Imprime na tela a mensagem
+    print('=' * tamanho)  # Imprime na tela sinais de igual conforme o valor da variável tamanho
 
 
 # Programa Principal

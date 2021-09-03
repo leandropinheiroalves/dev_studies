@@ -1,13 +1,19 @@
+# EXERCÍCIO 35
 """
 Desenvolva um programa que leia o comprimento de três retas e diga ao usuário se elas podem ou não formar um triângulo.
 """
-reta_1 = float(input('Digite o primeiro valor: '))
-reta_2 = float(input('Digite o segundo valor: '))
-reta_3 = float(input('Digite o terceiro valor: '))
+
+# PROGRAMA PRINCIPAL
+reta_1 = float(input('Digite o primeiro valor: '))  # Recebendo valor da primeira reta
+reta_2 = float(input('Digite o segundo valor: '))  # Recebendo valor da segunda reta
+reta_3 = float(input('Digite o terceiro valor: '))  # Recebendo valor da terceira reta
 if reta_1 > (reta_2 + reta_3) or reta_2 > (reta_1 + reta_3) or reta_3 > (reta_2 + reta_1):
-    print('Os valores informados não formam um triângulo.')
-else:
-    print('Os valores informados formam um triângulo.')
+    # ↑ SE a primeira reta for maior que a soma da segunda e da terceira reta
+    # ↑↑ OU SE a segunda reta for maior que a soma da primeira e da terceira reta
+    # ↑↑↑ OU SE a terceira reta for maior que a soma da segunda e da primeira reta
+    print('Os valores informados não formam um triângulo.')  # Imprime na tela que não é um triângulo
+else:  # SENÃO
+    print('Os valores informados formam um triângulo.')  # Imprime na tela que é um triângulo
 
 # # Solução Guanabara
 # print('-='*20)
