@@ -233,10 +233,12 @@
                        ]
             print(locadora[0]['ano']  # retorna o valor da chave ano do primeiro valor da lista locadora, nesse caso 1977
             print(locadora[2]['título']  # retorna o valor da chave título do terceiro valor da lista locadora, nesse caso Matrix
+
 [Funções]
     - Definições
         Funções são rotinas
         ex: de funções que já vem no python: print(), len(), input(), int(), float()
+
     - Criando funções
         ex:
         print('----------------------------------')
@@ -257,6 +259,7 @@
         mensagem('SITEMA DE ALUNOS')  # executando a função
         mensagem('CADASTRO DE FUNCIONÁRIO')
         mensagem('ERRO DO SISTEMA')
+
     - Empacotar parâmetros
         ex1:
             def contador(*núm):  # ao usar o * o python entende que vão ser inseridos vários valores
@@ -274,4 +277,73 @@
             valores = [7, 2, 5, 0, 4]
             dobra(valores)
             print(valores) # Retorna: [14, 4, 10, 0, 8]
+
+[Interactive Help]  # Ajuda interativa
+    -help()
+        entra no modo de ajuda, onde você pode inserir os comandos para ver o manual sobre eles
+        >>> : modo padrão do console python
+        help> : modo do console interativo
+    -help(print)
+        já retorna o manual da função especifica informada
+    -print(input.__doc__)
+        retorna informação sobre a função
+
+[Docstring]  # string de documentação
+    -ex:
+        def contador(i, f, p):
+            """
+            -> Faz uma contagem e mostra na tela.
+            :param i: inicio da contagem
+            :param f: fim da contagem
+            :param p: passo da contagem
+            :return: sem retorno
+            """
+            c= i
+            while c <= f:
+                print(f'{c}', end='..')
+                c += p
+            print('FIM!')
+        help(contador)  # Mostra a documentação entre as tres aspas
+
+[Parâmetros opcionais]
+    # Quando um valor é declarado para um dos parâmetros da função ele se torna opcional
+    -ex:
+        def somar(a=0, b=0, c=0):
+            s= a + b + c
+            print(f'A soma vale {s}')
+        somar(3, 2, 5)
+        somar(8, 4)  # como existe um valor opcional, o valor que não foi informado será pego do valor opcional c = 0
+
+[Escopo de variáveis]
+    # Variáveis globais funcionam em qualquer local do programa
+    # Variáveis locais funcionam apenas dentro do escopo  do código em que ela é utilizada
+    ex:
+        def teste(b):
+            a = 8
+            b += 4
+            c = 2
+            print(f'A dentro vale {a}')  # Retornaria 8
+            print(f'B dentro vale {b}')  # Retornaria 9
+            print(f'C dentro vale {c}')  # Retornaira 2
+        a = 5
+        teste(a)
+        print(f'A dentro vale {a}')  # Retornaria 5
+        print(f'B dentro vale {b}')  # Retornaria erro pois a variável b não existe fora da função
+        print(f'C dentro vale {c}')  # Retornaria erro pois a variável c não existe fora da função
+            # no exemplo acima a variável 'a' é global, então seu valor vai ser 5 dentro ou fora da função
+            # já as váriaveis b e c são locais, e elas só existem dentro da função teste
+            # caso exista uma variável globlal e uma local com o mesmo nome, a local será uzada sem alterar a global
+            # para que a variável global seja sempre usada é necessário usar a palavra reservada global
+                ex:
+                global a
+                a = 5
+                    # nesse caso, sempre que a for alterado, serão alteradas todas as variáveis com nome a
+
+[Retorno de resultados]
+    # Funções normalmente retornam valores, utilizando a palavra reservada return
+    ex:
+        def somar(a=0, b=0, c=0)
+            s = a + b + c
+            return s
+        resp = somar(3, 2, 5)  # a variável resposta vai receber o valor direto da soma
 
