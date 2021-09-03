@@ -347,3 +347,67 @@
             return s
         resp = somar(3, 2, 5)  # a variável resposta vai receber o valor direto da soma
 
+[Módularização]  # Módulos são arquivos
+    # Criar vários módulos com funções para que o programa fique mais limpo
+    # Surgiu no início da década de 60
+    # Sistemas ficando cada vez maiores
+    # Foco: dividir um programa grande
+    # Foco: aumentar a legibilidade
+    # Foco: facilitar a manutenção
+    - Vantagens
+        # Organização do código
+        # Facilidade na manutenção
+        # Ocultação de código detalhado
+        # Reutilização em outros projetos
+
+[Pacotes] # São pastas contendo vários arquivos(módulos)
+    # Criar uma pasta com vários módulos, para melhor organização
+    # Dentro dos pacotes é necessário ter um arquivo __init__.py
+
+[Erros e Exceções]  # Erros acontecem sempre
+
+    - SyntaxError  # Erro de sintaxe, falha sintática
+        # Acontece quando algum comando é digitado errado ou com algo faltando
+        ex: primt('o')  # print escrito com m no lugar do n
+            print('o'  # faltando parênteses no final
+
+        - NameError  # Erro de nome, é uma exceção
+            # Acontece quando alguma parte do código não foi declarada
+            ex: print(x)  # sem criar a váriavel x antes, irá apararecer NameError
+
+        - ValueError  # Erro de valor, é uma exceção
+            # Acontece quando é esperado um tipo de valor e recebido outro
+            ex: int('oito')  # esperado um valor inteiro não uma string
+
+        - ZeroDivisonError  # Erro de divisão por zero, é uma exceção
+            # Acontece quando por algum motivo um número é dividido por 0, e isso não é possível
+            ex: r = 4 / 0
+
+        - TypeError  # Erro de tipo
+            # Acontece quando uma operação tenta ser feita em um tipo em que ela não pode ser feita
+            ex: r = 2 / '2'  # a operação não por ser divida por um string
+
+        - IndexError  # Erro de índice
+            # Acontece quando um índice que não existe é acessado
+            ex: lst = [3, 6, 4]
+                print(lst[3])  # Erro de índice pois na lista lst o índice 3 não existe, o limite é 2
+
+        - KeyError  # Igual IndexError mas em dicionários
+
+        - ModuleNotFoundError  # Erro ao tentar importar um módulo que não foi encontrado
+
+[Tratamento de Erros]
+
+    - try  # Serve para tratar erros
+        ex:
+        try:  # tenta executar o código
+            a = int(input('Numerador: '))
+            b = int(input('Denominador: '))
+            r = a / b
+        except Except as erro:  # cria uma variável para tratamento de erro caso o try não funcione
+            print(f'Problema encontrado foi {erro.__class__}')  # imprime mensagem alternativa
+        else:  # se funcionar executa o código abaixo
+            print(f'O resultado  é {r}')
+        finally:  # executa o código abaixo sempre, mesmo se der ou não erro
+            print('Volte sempre! Muito Obrigado!')
+
