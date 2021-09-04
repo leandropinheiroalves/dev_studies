@@ -315,3 +315,41 @@
     [Utilizar Autênticação em dois passos]
         → Baixar no GooglePlay o Google Authenticator
         → Utilizar não só no GitHub mas em todas as contas que permitirem autênticação em 2 passos
+
+[Aula 12] - Git Branches de forma fácil e com exemplo
+
+    [Branch ou Ramificações]
+        → Branch é uma ramificação do seu produto principal, que normalmente é chamado master
+        → A branch principal é a master, e depois de muitos commits pra ela, você pode fazer um pull pra origin
+            ► master: principal branch local do seu projeto
+            ► origin: branch remota do seu projeto, que serve como um backup
+                ► a cada commit nova você cria um versionamento novo no seu projeto
+                ► depois é feio um push para o repositório remoto
+
+    [Branches em Projetos Grandes]
+        → Não commitar tudo na brach master!
+            ► Se ouver algum erro, você estará mandando esse erro pro seu ramo principal e isso é péssimo
+            ► O correto é criar um projeto estável, e depois todas as alterações que forem ser feitas, criar novas branches para elas
+            ► Depois que seu novo ramo estiver estável e passar por todas as avaliações necessárias, você pode joga-la na branch principal usando o merge
+                ► Merge: Ele joga seu ramo secundário no ramo principal
+            ► Quando se usa ramos secundários, a qualquer momento você pode descarta-los que nada será alterado do ramo principal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
