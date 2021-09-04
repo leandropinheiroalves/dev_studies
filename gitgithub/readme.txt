@@ -189,4 +189,25 @@
         → Ctrl + Enter depois Ctrl + P:
             ► Faz o commit das alterações para o repositório local e em seguida já faz o Push pro repositório remoto
 
+[Aula 06] - Instalando GitHub Desktop no Linux (Ubuntu foi utilizado na aula)
+
+    [Programas Necessários]
+        → Git:
+            ► No Ubuntu, Ctrl + Alt + T para abrir o terminal
+            ► sudo apt update (sera pedido a senha)
+            ► sudo apt upgrade -y (-y confirma sozinho)
+            ► sudo apt install git -y
+                ► git --version (ver versão do Git)
+        → Google Chrome
+        → Virtual Studio Code
+            ► Versão Stable: Versão mais estável e mais recomendada para o uso
+            ► Versão Insiders: Versão mais atual e avançada, porém menos estável
+        → GitHub Desktop:
+            ► Ainda não disponível para Linux
+            ► No entanto, GitHub Desktop é um software livre
+                ► github.com/shiftkey
+                ► Ir até os repositorios do shiftkey e encontrar o repositório desktop
+                ► Ir no readme e cliclar em latest releases
+                ► No caso do Ubuntu baixair o .deb
+
 
