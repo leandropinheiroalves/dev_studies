@@ -1,5 +1,4 @@
 [Aula 01] - O que é Git? O que é versionamento?
-
     → Git != GitHub
     → Git de uma maneira bem simplória é um Software de Controle de Versão (VCS)
     → GitHub de uma maneira bem simplória é um Plataforma de Rede Social para Programadores
@@ -32,41 +31,42 @@
                 → Visual SourceSafe
                 → Perforce
 
-        [Versionamento distribuído]
-            → Este tipo de versionamento é mais moderno, ele possibilita que cada pessoa do projeto tenha um software de versionamento no próprio computador
-            → Nesse caso não é necessário estar conectado com o servidor
-            → Nesse tipo de VCS existe um repositório remoto (nuvem)
-            → Os programadores nesse modo enviam o commit para um repositório local, armazenado na própria máquina
-            → Quando se acomulam vários commits, o programador faz um push, que envia todos os commits para o repositório remoto
-                → Push: Basicamente jogar o versionamento que está na sua máquina para o repositório remoto
-            → Alguns exemplos de Software de Versionamento Distribuído:
-                → Mercurial
-                → Bazaar
-                → Code Co-op
-                → GNU arch
-                → Monotone
-                → Fossil
-                → *BitKeeper
-                → *Git
+    [Versionamento distribuído]
+        → Este tipo de versionamento é mais moderno, ele possibilita que cada pessoa do projeto tenha um software de versionamento no próprio computador
+        → Nesse caso não é necessário estar conectado com o servidor
+        → Nesse tipo de VCS existe um repositório remoto (nuvem)
+        → Os programadores nesse modo enviam o commit para um repositório local, armazenado na própria máquina
+        → Quando se acomulam vários commits, o programador faz um push, que envia todos os commits para o repositório remoto
+            ► Push: Basicamente jogar o versionamento que está na sua máquina para o repositório remoto
+        → Alguns exemplos de Software de Versionamento Distribuído:
+            → Mercurial
+            → Bazaar
+            → Code Co-op
+            → GNU arch
+            → Monotone
+            → Fossil
+            → *BitKeeper
+            → *Git
 
-        [Principais Vantagens de se utilizar VCS]
-            → Controle de histórico
-            → Trabalho em equipe
-            → Ramificação do projeto
-            → Segurança
-            → Organização
+    [Principais Vantagens de se utilizar VCS]
+        → Controle de histórico
+        → Trabalho em equipe
+        → Ramificação do projeto
+        → Segurança
+        → Organização
 
 [Aula 02] - O que é GitHub? Pra que ele serve?
 
-    → GitHub é um repositório remoto, onde fica armazenado as versões do seu projeto
-    → GitHub também é uma plataforma social, nela você pode se conectar com pessoas, e ajudar e ser ajudado por elas
-    → Vantagens do GitHub:
-        → Repositórios ilimitados
-        → Hospedagem de código-fonte
-        → Características de rede social
-        → GitHub Pages integrado
-        → Colaboração
-        → Forks → Copiar um projeto completo
+    [GitHub]
+        → GitHub é um repositório remoto, onde fica armazenado as versões do seu projeto
+        → GitHub também é uma plataforma social, nela você pode se conectar com pessoas, e ajudar e ser ajudado por elas
+        → Vantagens do GitHub:
+            ► Repositórios ilimitados
+            ► Hospedagem de código-fonte
+            ► Características de rede social
+            ► GitHub Pages integrado
+            ► Colaboração
+            ► Forks → Copiar um projeto completo
 
     [Só existe o GitHub?]
         → GitLab
@@ -229,7 +229,6 @@
 [Aula 08] - Versionando seus projetos antigos
 
     [Criando um novo Repositório]
-
         → GitHub Desktop:
             →→ Ir em File > New repository... ou apertar o atalho Ctrl + N
             →→ Será necessário:
@@ -249,4 +248,11 @@
                         ► Será necessário escolher uma organização
                             ► No caso de usuário sem organização escolher None, escolha que já vem por padrão
 
+[Aula 09] = Você sabe usar Issues?
 
+    [O que é uma Issue?]
+        → Issue é um problema identificado por alguém que não sabe como resolver o problema, por exemplo:
+            ► Um usuário está usando o vscode e ele dá um problema inesperado
+                ► Caso o usuário não saiba como resolver o problema, ele pode ir no repositório da do vscode e abrir uma issue informando o problema
+        → Sempre que for identificado um problema, antes de abrir uma Issue, procure no repositóri da organização responsável se já não existe uma issue sobre o assunto
+        → Issues são muito importantes para você contribuir com projetos livres, olhando as issues abertas e tentando fecha-las.
