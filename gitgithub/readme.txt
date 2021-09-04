@@ -226,4 +226,27 @@
         → Entre na pasta e configure para exibir os arquivos ocultos
             ► Se existir uma pasta oculta chamada .git, está pasta está sendo versionada
 
+[Aula 08] - Versionando seus projetos antigos
+
+    [Criando um novo Repositório]
+
+        → GitHub Desktop:
+            →→ Ir em File > New repository... ou apertar o atalho Ctrl + N
+            →→ Será necessário:
+                ► Colocar um nome para o seu repositório
+                ► Colocar uma descrição
+                ► Escolher o local onde será criado o repositório
+                    ► Sempre marque a opção de iniciar o repositório com um README
+                ► Escolher o Git Ignore baseado na linguagem do código
+                    ► Ao escolher a linguagem, o git irá ignorar arquivos compilados e deixar só os códigos necessários para sua aplicação
+                ► Escolher Licença (por padrão MIT)
+            →→ Depois dos passos acima, o repositório será criado localmente, mas ainda será necessário:
+                ► Publicar seu repositório local no repositório remoto:
+                    ► Clicar em Publish repository no GitHub Desktop
+                        ► Será necessário um nome e uma descrição para o repositório remoto
+                            ► Por padrão ele já utiliza o nome e a descrição do repositório local, mas é possível alterar
+                        ► Será necessário escolher se o repositório será público ou privado
+                        ► Será necessário escolher uma organização
+                            ► No caso de usuário sem organização escolher None, escolha que já vem por padrão
+
 
