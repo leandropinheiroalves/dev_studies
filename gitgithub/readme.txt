@@ -180,6 +180,8 @@
             ► Empurra todas as alterações do seu repositório local (Git) para o repositório remoto (GitHub)
         → Pull
             ► Puxa todas as alterações do repositório remoto (GitHub) para o seu repositório local (Git)
+        → Fetch
+            ► Verifica as versões do repositório remoto e do repositório local, informando as diferenças e quais ações podem ser feitas
 
     [Alguns comandos GitHub Desktop]
         → Ctrl + Shift + A:
@@ -209,5 +211,19 @@
                 ► Ir até os repositorios do shiftkey e encontrar o repositório desktop
                 ► Ir no readme e cliclar em latest releases
                 ► No caso do Ubuntu baixair o .deb
+
+[Aula 07] - Clonando um Repositório
+
+    [O que é Repositório]
+        → É uma área onde eu tenho código que está versionado, esse repositório pode ser público ou privado
+
+    [Como clonar um Repositório]
+        → Entrar no github.com/gustavoguanabara e entrar no repositório html-css
+            ► Clicar em code, depois em Open With GitHub Desktop
+            ► Escolher a pasta do seu computador onde deseja salvar e confirmar
+
+    [Como saber se uma pasta está versionada]
+        → Entre na pasta e configure para exibir os arquivos ocultos
+            ► Se existir uma pasta oculta chamada .git, está pasta está sendo versionada
 
 
