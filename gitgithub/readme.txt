@@ -248,7 +248,7 @@
                         ► Será necessário escolher uma organização
                             ► No caso de usuário sem organização escolher None, escolha que já vem por padrão
 
-[Aula 09] = Você sabe usar Issues?
+[Aula 09]  Você sabe usar Issues?
 
     [O que é uma Issue?]
         → Issue é um problema identificado por alguém que não sabe como resolver o problema, por exemplo:
@@ -256,3 +256,48 @@
                 ► Caso o usuário não saiba como resolver o problema, ele pode ir no repositório da do vscode e abrir uma issue informando o problema
         → Sempre que for identificado um problema, antes de abrir uma Issue, procure no repositóri da organização responsável se já não existe uma issue sobre o assunto
         → Issues são muito importantes para você contribuir com projetos livres, olhando as issues abertas e tentando fecha-las.
+
+[Aula 10] - Guia da Linguagem Markdown
+
+    [Markdown]
+        → Uma linguagem focada em marcação, assim como HTML
+        → É compátivel com vários sites, inclusive o GitHub
+        → Basicamente serve para criar formatações em um texto dentro de um site ou arquivo de uma forma mais simples que o html
+        → README.md é um arquivo markdown que existe nos repositórios do GitHub
+        → É utilizado dentro do GitHub no README, arquivos .md, em issues e pull requests.
+
+    [Aluns comando em Markdown]
+        → Negrito (** ou __): utlizado no início e no final das frases ou palavras
+        → Itálico (* ou _): utlizado no início e no final das frases ou palavras
+        → Riscado no meio (~~): utlizado no início e no final das frases ou palavras
+        → Título Principal (#): utilizado no inicio da frase
+        → Título Nível 2 (##): utilizado no inicio da frase
+        → Título Nível 3 (###): utilizado no inicio da frase
+        → Linha (--- ou ***): cria uma linha de separação
+        → Lista numerada (1.): cria uma lista númerada, pode ser colocado qualquer número que ele irá organizar de forma cronológica
+            ► (   1.): 3 espaços antes cria um sub item do item anterior
+        → Lista demarcada (* ou -): cria uma lista demarcada
+            ► (   * ou    -): 3 espaços antes cria um sub item do item anterior
+        → Lista de tarefas (-[]): cria uma lista de check list
+            ► (-[x]): mostra que a tarefa foi marcada
+        → Colocar imagens (![texto](link): coloca imagem apartir de um link
+            ► também é possível arrastar a imagem que você tenha para dentro do texto
+        → Links ([texto](link)): faz com que o texto entre [] fique com hiperlink do link adicionado entre ()
+        → Tabelas (|):
+            ► Colocar os termos separados por | faz com que se crie a linha da tabela
+                Num | Nome | Nota
+                ---|---|---
+                1|Gustavo|8,5
+                2|José|10
+                3|Maria|9
+        → Comando (`): utlizado no início e no final do comando para mostrá-lo como comando
+        → Trechos de programa(```): utlizado no início e no final do bloco de comando para mostrá-los como código
+        → Emojis (:): depois que colocar os : vai aparecer indicações
+            ► github.com/ikatyang > repositories > emoji-cheat-sheet
+                ► todos os emojis disponíveis de forma organizada
+            ► emojipedia.org
+                ► códigos para poder utilizar os emojis nos nomes das issues
+        → Marcar pessoas (@): utilizar antes do @ o nome da conta no github para criar um link para o perfil dela
+        → Quotes (>): colocar o sinal de maior antes do link da postagem para mensioná-la
+            ► clicar na mensagem que quer da quote e ir em quote
+
