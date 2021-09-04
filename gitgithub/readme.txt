@@ -301,3 +301,17 @@
         → Quotes (>): colocar o sinal de maior antes do link da postagem para mensioná-la
             ► clicar na mensagem que quer da quote e ir em quote
 
+[Aula 11] - Seu GitHub muito mais seguro
+
+    [Dicas para senhas fortes]
+        → Pelo menos 8 caracteres
+        → Letras e números
+        → Maiúsculas e minúsculas
+        → Símbolos
+        → Evitar nomes e palavras comuns
+        → Evitar padrões
+        → Nunca compartilhe uma senha
+
+    [Utilizar Autênticação em dois passos]
+        → Baixar no GooglePlay o Google Authenticator
+        → Utilizar não só no GitHub mas em todas as contas que permitirem autênticação em 2 passos
