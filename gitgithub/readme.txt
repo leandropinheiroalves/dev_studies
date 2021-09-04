@@ -334,7 +334,11 @@
                 ► Merge: Ele joga seu ramo secundário no ramo principal
             ► Quando se usa ramos secundários, a qualquer momento você pode descarta-los que nada será alterado do ramo principal
 
+[Aula 13] - Hospedagem Grátis no GitHub Pages
 
+    → Usando o GitHub Pages é possível hospedar um site simples
+    → Possível fazer Currículo
+    → Compatível com HMTL, CSS, JavaScript
 
 
 
