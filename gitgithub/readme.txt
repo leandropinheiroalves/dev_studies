@@ -169,34 +169,24 @@
         → Git SCM
         → GitHub Desktop
 
+[Aula 05] - Criando o primeiro Repositório
 
+    ► Criar repositório local (Git) com o nome Ola Mundo
 
+    [Termos usados]
+        → Commit
+            ► Envia as alterações feitas no seu projeto, para o seu repositório local (Git)
+        → Push
+            ► Empurra todas as alterações do seu repositório local (Git) para o repositório remoto (GitHub)
+        → Pull
+            ► Puxa todas as alterações do repositório remoto (GitHub) para o seu repositório local (Git)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    [Alguns comandos GitHub Desktop]
+        → Ctrl + Shift + A:
+            ► Abrir repositório diretamente no Visual Studio Code
+        → Ctrl + P:
+            ► Push
+        → Ctrl + Enter depois Ctrl + P:
+            ► Faz o commit das alterações para o repositório local e em seguida já faz o Push pro repositório remoto
 
 
