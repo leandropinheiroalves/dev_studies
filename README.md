@@ -1,1 +1,1 @@
-# python_estudos
+# Repositório contendo meus estudos como desenvolvedor
