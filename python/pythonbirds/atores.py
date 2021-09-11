@@ -55,7 +55,6 @@ class Ator():
         pass
 
 
-
 class Obstaculo(Ator):
     _caracter_ativo = 'O'
 
@@ -118,7 +117,6 @@ class Passaro(Ator):
         :return: posição x, y
         """
         return 1, 1
-
 
     def lancar(self, angulo, tempo_de_lancamento):
         """
