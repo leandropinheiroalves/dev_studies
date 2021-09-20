@@ -935,22 +935,47 @@ Onde encontramos SGDB's?
 * Novas Aplicações de Banco de Dados: Bibliotecas Digitais, Comércio Eletrônico, Telecomunicações, etc.
 * Uma das Fontes do Big Data
 
-### Bancos de Dados Relacionais
+>### Bancos de Dados Relacionais
 
 Bancos de Dados Relacionais são gerenciados por RDBMS (Relational Database Management System)
 
+* Entidades (tabelas) e atributos
+* Registros (tuplas)
+* Chaves (primária e estrangeira)
+* Relacionamentos entre entidades (tabelas)
+* Integridade Referencial
+* Normalização
+
+>> Principais Conceitos de Bancos de Dados Relacionais
+
+Os dados de um banco de dados relacional são armazenados em **tabelas.**
+
+Cada linha formada por uma lista ordenada de colunas representa um **registor,** ou tupla, dentro da tabela.
+
+As colunas de uma tabela são também chamadas de **atributos.**
+
+Um conceito importante em um banco de dados relacional é o conceito de atributo **chave**, que permite identificar e diferenciar uma tupla de outra.
+
+Chave Primária (PK) - coluna(s) que garante(m) a unicidade das linhas. É a chave principal de uma tabela. Uma tabela só pode ter uma Chave Primária.
+
+Chave Estrangeira (FK) - coluna(s) de uma tabela que contém valores da PK de outra tabela. Uma tabela pode ter mais de uma Chave Estrangeira.
+
+As chaves garantem o relacionamento entre as tabelas.
+
+>>> Índices
+
+É uma lista ordenada de valores que apontam para os dados nas tabelas. Utilizado para agilizar a leitura de dados. Pode ser utilizado também para forçar a unicidade dos dados.
+
+>>> Integridade Referencial
+
+É o conceito em que várias tabelas  de banco de dados compartilham uma relação com base nos dados armazenados nas tabelas e essa relação deve ser coerente. Isso geralmente é imposto com ações de adição, exclusão e atualização em cascata.
+
+>>> Normalização de Dados
+
+É o processo de organização de campos e tabelas em um banco de dados relacional para minimizar a redundância e a dependência.
 
 
-
-
-
-
-
-
-
-
-
-
+> Linguagem SQL
 
 
 
