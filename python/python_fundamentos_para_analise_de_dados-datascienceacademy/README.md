@@ -1000,13 +1000,38 @@ Os comandos da linguagem SQL se dividem em três grandes grupos principais:
 
 > ### SQLite
 
-SQl
+SQLite é um engine (motor) de banco de dados SQL.
 
+Se o Banco de Dados SQLite é um único arquivo, por que não usar um arquivo comum ao invés de SQLite?
 
+* Carrega em memória apenas os registros a serem usados e não o arquivo inteiro
 
+Por que usar o SQLite?
 
+* Não requer um processo servidor dedicado.
+* Configuração zero, o que significa que nenhuma configuração ou administração é necessária.
+* Um banco de dados SQLite completo é armazenado em um único arquivo multiplataforma.
+* SQLite é pequeno e leve, menos de 400kb quando totalmente configurado.
 
+O SQLite está disponível para diversas plataformas, como Unix (Linux, Mac OSX, Android e iOS) e Windows.
 
+O SQLite pode ser usado, quando recursos avançados  de  SGDB's não forem necessários, como por exemplo para aplicações que executam em um smartphone.
 
+O SQLite é instalado automaticamente quando você instala o Anaconda.
+
+O código do SQLite, totalmente escrito em linguagem C, é de domínio público e pode ser usado livremente, inclusive para uso comercial e privado.
+
+O SQLite é amplamente utilizado na internet e em smartphones.
+
+Ao  contrário de outros Bancos de Dados, o SQLite não requer um processo ou serviço sendo executado em um servidor. Todo acesso ao banco  de dados é feito através de leitura/escrita aos arquivos do banco de dados, acesso este feito pelas bibliotecas do SQLite.
+
+Todos os objetos do banco de dados, como tabelas, índices, triggers e views ficam armazenados no mesmo arquivo.
+
+Por ser amplamente testado antes de cada release, o SQLite é considerado bastante confiável.
+
+> ### E qual o uso apropriado do SQLite?
+
+* Dispositivos embarcados (como em sistemas de Internet das Coisas)
+* 
 
 
