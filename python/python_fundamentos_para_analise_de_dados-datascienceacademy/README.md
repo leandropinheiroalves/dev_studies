@@ -907,3 +907,61 @@ Bancos de dados são coleções de dados interligados entre si e organizados par
 Dados são os fatos Brutos
 
 Informção é o agrupamento de dados de forma organizada
+
+### SGDB - Sistema de Gerenciamento de Banco de Dados
+
+SGDB - Sistema de Gerenciamento de Banco de Dados
+
+DBMS - Database Management System
+
+Um Sistema de Gerenciamento de Banco de Dados (SGDB) é o conjunto de programas de computador (softwares) responsáveis pelo gerenciamento de uma base de dados.
+
+Por que usar um SGBD?
+1. Controlar redundância
+2. Compartilhamento de dados
+3. Independência de dados
+4. Segurança
+5. Backup e recuperação a falhas
+6. Forçar restrições de integridade
+7. Aumentar a produtividade e disponibilidade
+8. Flexibilidade e padronização
+
+Onde encontramos SGDB's?
+* Data Mining
+* Datawarehousing e OLAP
+* Banco de Dados Multimídia
+* Banco de Dados Móveis
+* Banco de Dados Semiestruturados
+* Novas Aplicações de Banco de Dados: Bibliotecas Digitais, Comércio Eletrônico, Telecomunicações, etc.
+* Uma das Fontes do Big Data
+
+### Bancos de Dados Relacionais
+
+Bancos de Dados Relacionais são gerenciados por RDBMS (Relational Database Management System)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
