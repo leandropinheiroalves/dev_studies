@@ -1100,3 +1100,36 @@ For necessário manter moderado volume de dados|For necessário manter alto volu
 
 >  ### Banco de Dados MongoDB
 
+MongoDB é um banco de dados orientado a documento, uma das categorias de bancos de dados NoSQL.
+
+Um banco de dados NoSQL orientado a documento, substitui o conceito de "linha" como em bancos de dados relacionais, por um modelo mais flexível, o "documento".
+
+O MongoDB é open-source e um dos  líderes no segmento de bancos de  dados NoSQL. Ele foi desenvolvido em linguagem C++.
+
+Algumas da  principais  características do MongoDB:
+
+* Indexação
+* Agregação
+* Tipos de dados especiais
+* Armazenamento
+
+Algumas características presentes em bancos de dados relacionais, não estão presentes no MongoDB, como alguns tipos de joins e transações multi-linha.
+
+MongoDB|RDBMS
+---|---
+Database|Database
+Collection|Tabela
+Document|Linha/Tupla
+Field|Coluna
+Embedded Documents|Join de Tabelas
+Primary Key|Primary Key
+
+>> Onde usar o MongoDB?
+
+* Big Data
+* Gestão de Conteúdo
+* Infraestrutura Social e Mobile
+* Gestão de Dados de Usuários
+* Data  Hub
+* Capturar Stream de Dados para Análise
+
