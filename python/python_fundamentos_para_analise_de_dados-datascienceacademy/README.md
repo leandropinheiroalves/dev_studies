@@ -1089,4 +1089,14 @@ http://nosql-database.org
 
 > ### RDBMS x NoSQL
 
----QQ/q////łþø↓↓↓←ŧ®ħŋ←↓→ø
+Use RDBMS quando...|Use NoSQL quando...
+---|---
+Suas aplicações forem centralizadas(ERP, CRM)|Suas aplicações forem descentralizadas(Web, Mobile, Big Data, IoT)
+Alta disponibilidade moderada for necessária|Quando a disponibilidade tiver que ser contínua, sem interrupção
+Dados gerados em velocidade moderada|Dados gerados em alta velocidade(sensores)
+Dados forem gerados a partir de poucas fontes|Dados forem gerados a partir de múltiplas  fontes
+Transações complexas|Transações simples
+For necessário manter moderado volume de dados|For necessário manter alto volume  de dados
+
+>  ### Banco de Dados MongoDB
+
