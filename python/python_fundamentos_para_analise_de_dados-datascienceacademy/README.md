@@ -975,12 +975,32 @@ As chaves garantem o relacionamento entre as tabelas.
 É o processo de organização de campos e tabelas em um banco de dados relacional para minimizar a redundância e a dependência.
 
 
-> Linguagem SQL
+> ### Linguagem SQL (Structured Query Language)
 
+Os comandos da linguagem SQL se dividem em três grandes grupos principais:
 
+* DML (Data Manipulation Language)
+* DDL (Data Definition Language)
+* DCL (Data Control Language)
 
+>> DML (Data Manipulation Language) (Desenvolvimento)
+* SELECT: pesquisa de dados
+* UPDATE: atualização de dados
+* DELETE: eliminação de dados
+* INSERT: inserção de dados
 
+>> DDL (Data Definition Language) (Suporte)
+* CREATE: definição de um objeto (tabela, índice)
+* ALTER: alteração de um objeto
+* DROP: eliminação de um objeto
 
+>> DCL (Data Control Language) (Suporte/Desenvolvimento)
+* GRANT: fornecer um privilégio
+* REVOKE: tirar um privilégio
+
+> ### SQLite
+
+SQl
 
 
 
