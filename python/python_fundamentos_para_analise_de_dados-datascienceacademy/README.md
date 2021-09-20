@@ -1044,5 +1044,49 @@ Por ser amplamente testado antes de cada release, o SQLite é considerado bastan
 * Alta concorrência é requerida
 * Armazenar Big Data
 
+> ### Banco de Dados NoSQL
+
+Bancos de Dados NoSQL, são bancos de dados distribuídos e não-relacionais, que foram projetados para atender os requerimentos de Big Data.
+
+Bancos de Dados NoSQL oferecem uma arquitetura muito mais escalável e eficiente que os bancos relacionais e facilitam consultas no-sql de dados semi-estruturados ou não-estruturados.
+
+A este respeito, NoSQL surgiu como um paradigma não tradicional para lidar com grandes volumes de dados e para resolver os desafios colocados pela chegada de implementações de **Big Data**.
+
+Bancos de Dados NoSQL oferecem 4 categorias principais de bancos de dados:
+
+* Graph databases
+* Document databases
+* Key-values stores
+* Column family stores
+
+Os principais Bancos de Dados NoSQL são:
+
+* Graph:
+  * Neo4J
+  * FlockDB
+  * GraphDB
+  * ArangoDB
+* Document:
+  * MongoDB
+  * CouchDB
+  * RavenDB
+  * Terrastore
+* Key-value:
+  * Oracle NoSQL DB
+  * MemcacheDB
+  * Redis
+  * AWS DynamoDB
+* Column:
+  * HBase
+  * Cassandra*
+  * Hypertable
+  * Accumulo
+
+Para uma lista completa de Bancos de Dados NoSQL visite:
+
+http://nosql-database.org
 
 
+> ### RDBMS x NoSQL
+
+---QQ/q////łþø↓↓↓←ŧ®ħŋ←↓→ø
