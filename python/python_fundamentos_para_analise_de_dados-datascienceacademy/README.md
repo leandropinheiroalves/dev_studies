@@ -1029,9 +1029,20 @@ Todos os objetos do banco de dados, como tabelas, índices, triggers e views fic
 
 Por ser amplamente testado antes de cada release, o SQLite é considerado bastante confiável.
 
-> ### E qual o uso apropriado do SQLite?
+>> E qual o uso apropriado do SQLite?
 
 * Dispositivos embarcados (como em sistemas de Internet das Coisas)
-* 
+* Websites (Sites que recebem menos de 100k visitas por dia)
+* Análise de Dados
+* Cache para dados de RDBMS
+* Bancos de Dados temporários ou internos
+
+>> E quando não é apropriado usar SQLite?
+* Aplicações Cliente/Servidor
+* Websites com alto volume de tráfego
+* Análise de datasets muito grandes
+* Alta concorrência é requerida
+* Armazenar Big Data
+
 
 
