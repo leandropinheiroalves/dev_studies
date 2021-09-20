@@ -893,3 +893,17 @@ Python chama isso: **`obj._delattr_("my_attrib")`**
 Ou seja, você não precisa fazer uma chamada ao método diretamente.
 
 Python oferece vários métodos especiais para você!
+
+## **[Módulo 06] - Manipulando Bacon de Dados em Python**
+
+### O que são Bancos de Dados?
+
+Bancos de dados são coleções de dados interligados entre si e organizados para fornecer informações.
+
+É uma coleção de dados inter-relacionados, representando informações sobre um domínio específico.
+
+### Dados x Informações
+
+Dados são os fatos Brutos
+
+Informção é o agrupamento de dados de forma organizada
